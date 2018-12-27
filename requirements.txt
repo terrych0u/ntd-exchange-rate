@@ -1,2 +1,5 @@
+bs4
 requests
+requests-html
+pandas
 slackweb
