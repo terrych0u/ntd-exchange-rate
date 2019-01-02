@@ -1,5 +1,6 @@
-# twd_exchange_rate
-This is a little crawler tool for TWD exchange rate, and it will auto send info to slack if the rate have been update.
+# ntd-exchange-rate
+This is a little crawler tool for TW Dollar exchange rate, base on [Taiwan Bank](http://rate.bot.com.tw/xrt?Lang=zh-TW).
+It will get the newest exchange rate in background and send to slack channel if the rate have been update.
 
 ## Requirements
 In order to build it you need the following python components in your system.
@@ -23,7 +24,7 @@ docker build \
 --build-arg CURRENCY_TYPE="JPY,USD"
 -t=app .
 ```
-**Notice: build-arg must give it, and use "," comma to separate multiple currency type.**
+**Notice: build-arg must give it, and use "," comma to separate multiple currency type.**
 <br />
   
 Result: 
