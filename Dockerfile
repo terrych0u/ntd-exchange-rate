@@ -17,4 +17,3 @@ COPY beautifulsoup.py /usr/local/bin/beautifulsoup.py
 RUN pip install -r /tmp/requirements.txt
 
 ENTRYPOINT ["/usr/local/bin/beautifulsoup.py"]
-
