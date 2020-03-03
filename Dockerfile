@@ -14,6 +14,6 @@ ENV CURRENCY_TYPE_ENV=$CURRENCY_TYPE
 COPY requirements.txt /tmp/requirements.txt
 COPY beautifulsoup.py /usr/local/bin/beautifulsoup.py
 
-RUN pip install -r /tmp/requirements.txt
+RUN apk add --no-cache g++ libxml2-dev libxslt-dev && pip install --no-cache-dir -r /tmp/requirements.txt
 
 ENTRYPOINT ["/usr/local/bin/beautifulsoup.py"]
